@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">shoppy</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+     <string name="head">Saarway Shop</string>
+      <string name="detail">Product 1</string>
+      <string name="atc">Add to Cart</string>
+      <string name="pname">P_Name</string>
+      <string name="dot">:</string>
+      <string name="name">Product1</string>
+      <string name="desc">Product Detail</string>
+
+</resources>
