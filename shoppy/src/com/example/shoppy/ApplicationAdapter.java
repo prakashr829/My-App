@@ -14,13 +14,15 @@ import android.widget.Toast;
 
 
 public class ApplicationAdapter extends ArrayAdapter<Application>{
-    protected static final Products context = null;
+    
 	private List<Application> items;
     int count,send;
 	private EditPlayerAdapterCallback callback;
+	 private Context mContext;
     
     public ApplicationAdapter(Context context, List<Application> items) {
         super(context, R.layout.app_custom_list, items);
+        this.mContext        = context;
         this.items = items;
     }
     
@@ -33,6 +35,7 @@ public class ApplicationAdapter extends ArrayAdapter<Application>{
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         View v = convertView;
+        ImageView imgIcon;
         
         if(v == null) {
             LayoutInflater li = LayoutInflater.from(getContext());
@@ -42,23 +45,33 @@ public class ApplicationAdapter extends ArrayAdapter<Application>{
         Application app = items.get(position);
         
         if(app != null) {
-            ImageView icon = (ImageView)v.findViewById(R.id.imageVie);
+            imgIcon = (ImageView)v.findViewById(R.id.imageVie);
             TextView name = (TextView)v.findViewById(R.id.titleTxt);
            // LinearLayout desc = (LinearLayout)v.findViewById(R.id.ratingCntr);
             TextView rate = (TextView)v.findViewById(R.id.dlTxt);
             TextView desc = (TextView)v.findViewById(R.id.textdesc);
-            icon.setOnClickListener(new View.OnClickListener() {
+            try{
+            	
+            
+            imgIcon.setOnClickListener(new View.OnClickListener() {
 			
 
 				@Override
 				public void onClick(View v) {
-		
-						
+		                  
+					 ((Products)mContext).Onclick();
 					}
 			
 				
             
 			});
+            }
+            catch(Exception e){
+            	e.printStackTrace();
+            	
+            	
+            }
+          
             /*if(icon != null) {
                 Resources res = getContext().getResources();
                 String sIcon = "com.sj.jsondemo:drawable/" + app.getIcon();
@@ -78,6 +91,12 @@ public class ApplicationAdapter extends ArrayAdapter<Application>{
 		return v;
 		
     }
+    
+    public void click(){
+    	Products pd= new Products();
+    	pd.Onclick();
+    	
+    }
     public void setCallback(EditPlayerAdapterCallback callback){
 
         this.callback = callback;
@@ -89,6 +108,11 @@ public class ApplicationAdapter extends ArrayAdapter<Application>{
         public void Onclick();
     }
 
+    static class WeatherHolder
+    {
+        ImageView imgIcon;
+        
+    }
 }
     
 	

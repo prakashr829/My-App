@@ -108,4 +108,8 @@
         android:layout_marginBottom="19dp"
         android:text="@string/atc" />
 
+    
+        <requestFocus />
+   
+
 </RelativeLayout>
