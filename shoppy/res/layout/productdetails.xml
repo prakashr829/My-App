@@ -107,4 +107,8 @@
             android:layout_centerHorizontal="true"
             android:text="Buy Item" />
 
+    
+        <requestFocus />
+   
+
 </RelativeLayout>

@@ -15,7 +15,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable.Factory;
 import android.util.Log;
-import android.util.SparseBooleanArray;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -29,6 +29,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.readystatesoftware.viewbadger.BadgeView;
+
 
 public class Products extends ListActivity implements FetchDataListener {
 	Button back;
@@ -204,25 +205,34 @@ public class Products extends ListActivity implements FetchDataListener {
 		Toast.makeText(this, msg, Toast.LENGTH_LONG).show();
 	}
 
-	private void addListenerOnButton() {
-		// TODO Auto-generated method stub
-		back = (Button) findViewById(R.id.button1);
+	
 
-		back.setOnClickListener(new OnClickListener() {
+	 private void addListenerOnButton() {
+			// TODO Auto-generated method stub
+	    	back = (Button) findViewById(R.id.button1);
+	    	 
+			back.setOnClickListener(new OnClickListener() {
+	 
+				@Override
+				public void onClick(View arg0) {
+	 
+					Intent i = new Intent(getApplicationContext(), MainActivity.class);
+					startActivity(i);
+	 
+				}
+	 
+			});
+			//initView();
+	 
+	 }
 
-			@Override
-			public void onClick(View arg0) {
+	
+	
 
-				Intent i = new Intent(getApplicationContext(),
-						MainActivity.class);
-				startActivity(i);
+	
+		
 
-			}
-
-		});
-		// initView();
-
-	}
+	
 
 	protected void AddList() {
 		//int position = 0;

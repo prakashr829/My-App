@@ -36,8 +36,9 @@ public class ApplicationAdapter extends ArrayAdapter<Application>{
     public View getView(int position, View convertView, ViewGroup parent) {
         View v = convertView;
         ImageView imgIcon;
+
         TextView name,rate,desc;
-        
+
         if(v == null) {
             LayoutInflater li = LayoutInflater.from(getContext());
             v = li.inflate(R.layout.app_custom_list, null);            
@@ -47,10 +48,12 @@ public class ApplicationAdapter extends ArrayAdapter<Application>{
         
         if(app != null) {
             imgIcon = (ImageView)v.findViewById(R.id.imageVie);
+
             name = (TextView)v.findViewById(R.id.titleTxt);
            // LinearLayout desc = (LinearLayout)v.findViewById(R.id.ratingCntr);
              rate = (TextView)v.findViewById(R.id.dlTxt);
              desc = (TextView)v.findViewById(R.id.textdesc);
+
             try{
             	
             
@@ -93,6 +96,8 @@ public class ApplicationAdapter extends ArrayAdapter<Application>{
 		
     }
     
+
+
 }
     
 	
