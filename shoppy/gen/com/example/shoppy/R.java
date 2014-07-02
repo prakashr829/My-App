@@ -18,6 +18,13 @@ public final class R {
         public static final int anim_down=0x7f040006;
         public static final int anim_up=0x7f040007;
     }
+    public static final class array {
+        /**  Nav Drawer List Item Icons 
+ Keep them in order as the titles are in 
+         */
+        public static final int nav_drawer_icons=0x7f0c0001;
+        public static final int nav_drawer_items=0x7f0c0000;
+    }
     public static final class attr {
         /**  Custom divider drawable to use for elements in the action bar. 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
@@ -860,10 +867,16 @@ containing a value of this type.
         public static final int abc_split_action_bar_is_narrow=0x7f060002;
     }
     public static final class color {
-        public static final int abc_search_url_text_holo=0x7f070003;
+        public static final int abc_search_url_text_holo=0x7f070009;
         public static final int abc_search_url_text_normal=0x7f070000;
         public static final int abc_search_url_text_pressed=0x7f070002;
         public static final int abc_search_url_text_selected=0x7f070001;
+        public static final int counter_text_bg=0x7f070007;
+        public static final int counter_text_color=0x7f070008;
+        public static final int list_background=0x7f070004;
+        public static final int list_background_pressed=0x7f070005;
+        public static final int list_divider=0x7f070006;
+        public static final int list_item_title=0x7f070003;
     }
     public static final class dimen {
         /**  Default height of an action bar. 
@@ -954,6 +967,14 @@ containing a value of this type.
          Example customization of dimensions originally defined in res/values/dimens.xml
          (such as screen margins) for screens with more than 820dp of available width. This
          would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively).
+    
+
+         Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
+    
+
+         Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
     
          */
         public static final int activity_horizontal_margin=0x7f080015;
@@ -1084,12 +1105,23 @@ containing a value of this type.
         public static final int bgcolorb=0x7f020059;
         public static final int body=0x7f02005a;
         public static final int cart=0x7f02005b;
-        public static final int downarrow=0x7f02005c;
-        public static final int facebook=0x7f02005d;
-        public static final int file=0x7f02005e;
-        public static final int ic_launcher=0x7f02005f;
-        public static final int logo1=0x7f020060;
-        public static final int uparrow=0x7f020061;
+        public static final int counter_bg=0x7f02005c;
+        public static final int downarrow=0x7f02005d;
+        public static final int facebook=0x7f02005e;
+        public static final int file=0x7f02005f;
+        public static final int ic_communities=0x7f020060;
+        public static final int ic_drawer=0x7f020061;
+        public static final int ic_home=0x7f020062;
+        public static final int ic_launcher=0x7f020063;
+        public static final int ic_pages=0x7f020064;
+        public static final int ic_people=0x7f020065;
+        public static final int ic_photos=0x7f020066;
+        public static final int ic_whats_hot=0x7f020067;
+        public static final int list_item_bg_normal=0x7f020068;
+        public static final int list_item_bg_pressed=0x7f020069;
+        public static final int list_selector=0x7f02006a;
+        public static final int logo1=0x7f02006b;
+        public static final int uparrow=0x7f02006c;
     }
     public static final class id {
         public static final int action_bar=0x7f05001c;
@@ -1103,28 +1135,37 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f050016;
         public static final int action_menu_presenter=0x7f050017;
         public static final int action_mode_close_button=0x7f050024;
-        public static final int action_settings=0x7f05005b;
+        public static final int action_settings=0x7f05006a;
         public static final int activity_chooser_view_content=0x7f050025;
         public static final int always=0x7f05000b;
-        public static final int appIcon=0x7f050042;
+        public static final int appIcon=0x7f05004f;
         public static final int beginning=0x7f050011;
-        public static final int button1=0x7f05003f;
-        public static final int button2=0x7f05004a;
-        public static final int button3=0x7f05004b;
-        public static final int button4=0x7f05004c;
-        public static final int button5=0x7f05004d;
-        public static final int button6=0x7f05004e;
-        public static final int button7=0x7f05004f;
-        public static final int button8=0x7f050050;
-        public static final int button9=0x7f050051;
+        public static final int button1=0x7f050043;
+        public static final int button2=0x7f050042;
+        public static final int button3=0x7f050044;
+        public static final int button4=0x7f050045;
+        public static final int button5=0x7f050046;
+        public static final int button6=0x7f050047;
+        public static final int button7=0x7f050048;
+        public static final int button8=0x7f050049;
+        public static final int button9=0x7f05004a;
         public static final int checkbox=0x7f05002d;
         public static final int collapseActionView=0x7f05000d;
-        public static final int container=0x7f050048;
+        public static final int container=0x7f05003d;
+        public static final int counter=0x7f050056;
         public static final int default_activity_button=0x7f050028;
         public static final int dialog=0x7f05000e;
         public static final int disableHome=0x7f050008;
-        public static final int dlTxt=0x7f050045;
+        public static final int dlTxt=0x7f050052;
+        public static final int drawer_layout=0x7f05003c;
         public static final int dropdown=0x7f05000f;
+        public static final int editTex=0x7f050069;
+        public static final int editText1=0x7f050060;
+        public static final int editText2=0x7f050061;
+        public static final int editText3=0x7f050062;
+        public static final int editText4=0x7f050063;
+        public static final int editText5=0x7f050064;
+        public static final int editText6=0x7f050065;
         public static final int edit_query=0x7f050030;
         public static final int end=0x7f050013;
         public static final int expand_activities_button=0x7f050026;
@@ -1134,25 +1175,30 @@ containing a value of this type.
         public static final int icon=0x7f05002a;
         public static final int ifRoom=0x7f05000a;
         public static final int image=0x7f050027;
-        public static final int imageVie=0x7f050047;
-        public static final int imageView1=0x7f05003d;
-        public static final int imageView2=0x7f050040;
-        public static final int iv_down_arrow=0x7f050054;
-        public static final int iv_up_arrow=0x7f050053;
+        public static final int imageVie=0x7f050054;
+        public static final int imageView1=0x7f050040;
+        public static final int imageView2=0x7f050041;
+        public static final int imageView3=0x7f050059;
+        public static final int iv_down_arrow=0x7f05004d;
+        public static final int iv_up_arrow=0x7f05004c;
         public static final int listMode=0x7f050001;
-        public static final int listView1=0x7f050041;
+        public static final int listView1=0x7f050058;
         public static final int list_item=0x7f050029;
+        public static final int list_slidermenu=0x7f05004e;
+        public static final int login=0x7f050068;
         public static final int middle=0x7f050012;
         public static final int never=0x7f050009;
         public static final int none=0x7f050010;
         public static final int normal=0x7f050000;
+        public static final int pager=0x7f050055;
+        public static final int pass=0x7f050067;
         public static final int progress_circular=0x7f050018;
         public static final int progress_horizontal=0x7f050019;
         public static final int radio=0x7f05002f;
-        public static final int ratingCntr=0x7f050044;
-        public static final int relativeLayout1=0x7f05003c;
-        public static final int rl_footer1=0x7f050052;
-        public static final int rlayout1=0x7f050049;
+        public static final int ratingCntr=0x7f050051;
+        public static final int relativeLayout1=0x7f05003f;
+        public static final int rl_footer1=0x7f05004b;
+        public static final int rlayout1=0x7f05003e;
         public static final int search_badge=0x7f050032;
         public static final int search_bar=0x7f050031;
         public static final int search_button=0x7f050033;
@@ -1170,19 +1216,20 @@ containing a value of this type.
         public static final int split_action_bar=0x7f05001e;
         public static final int submit_area=0x7f050039;
         public static final int tabMode=0x7f050002;
-        public static final int text2=0x7f05003e;
-        public static final int textView1=0x7f050055;
-        public static final int textView2=0x7f050056;
-        public static final int textView3=0x7f050057;
-        public static final int textView4=0x7f050058;
-        public static final int textView5=0x7f050059;
-        public static final int textView6=0x7f05005a;
-        public static final int textdesc=0x7f050046;
+        public static final int text2=0x7f050057;
+        public static final int textView1=0x7f05005f;
+        public static final int textView2=0x7f05005a;
+        public static final int textView3=0x7f05005b;
+        public static final int textView4=0x7f05005c;
+        public static final int textView5=0x7f05005d;
+        public static final int textView6=0x7f05005e;
+        public static final int textdesc=0x7f050053;
         public static final int title=0x7f05002b;
-        public static final int titleTxt=0x7f050043;
+        public static final int titleTxt=0x7f050050;
         public static final int top_action_bar=0x7f050020;
         public static final int up=0x7f050021;
         public static final int useLogo=0x7f050003;
+        public static final int user=0x7f050066;
         public static final int withText=0x7f05000c;
     }
     public static final class integer {
@@ -1235,19 +1282,31 @@ containing a value of this type.
         public static final int abc_search_dropdown_item_icons_2line=0x7f030015;
         public static final int abc_search_view=0x7f030016;
         public static final int abc_simple_decor=0x7f030017;
-        public static final int activity_main=0x7f030018;
-        public static final int app_custom_list=0x7f030019;
-        public static final int app_list=0x7f03001a;
-        public static final int cartlist=0x7f03001b;
-        public static final int fragment_main=0x7f03001c;
-        public static final int product=0x7f03001d;
-        public static final int productdetails=0x7f03001e;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001f;
+        public static final int aboutus=0x7f030018;
+        public static final int activity_main=0x7f030019;
+        public static final int app_custom_list=0x7f03001a;
+        public static final int app_list=0x7f03001b;
+        public static final int blogs=0x7f03001c;
+        public static final int buydetails=0x7f03001d;
+        public static final int cartdetails=0x7f03001e;
+        public static final int cartlist=0x7f03001f;
+        public static final int drawer_list_item=0x7f030020;
+        public static final int fragment_main=0x7f030021;
+        public static final int home=0x7f030022;
+        public static final int newarival=0x7f030023;
+        public static final int product=0x7f030024;
+        public static final int productdetails=0x7f030025;
+        public static final int products=0x7f030026;
+        public static final int register=0x7f030027;
+        public static final int signup=0x7f030028;
+        public static final int support_simple_spinner_dropdown_item=0x7f030029;
+        public static final int userpasslayout=0x7f03002a;
     }
     public static final class menu {
-        public static final int main=0x7f0c0000;
+        public static final int main=0x7f0d0000;
     }
     public static final class string {
+        public static final int Login=0x7f0a001d;
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
          */
         public static final int abc_action_bar_home_description=0x7f0a0001;
@@ -1291,7 +1350,16 @@ containing a value of this type.
         public static final int action_settings=0x7f0a000f;
         public static final int app_name=0x7f0a000d;
         public static final int atc=0x7f0a0012;
+        public static final int cadd=0x7f0a001c;
+        public static final int cemail=0x7f0a001a;
+        public static final int cfname=0x7f0a0018;
+        public static final int cid=0x7f0a0017;
+        public static final int clname=0x7f0a0019;
+        public static final int cphone=0x7f0a001b;
         public static final int desc=0x7f0a0016;
+        /**  Content Description 
+         */
+        public static final int desc_list_item_icon=0x7f0a001e;
         public static final int detail=0x7f0a0011;
         public static final int dot=0x7f0a0014;
         public static final int head=0x7f0a0010;

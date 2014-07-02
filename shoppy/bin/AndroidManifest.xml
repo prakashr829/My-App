@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="14"
         android:targetSdkVersion="19" />
  <uses-permission android:name="android.permission.INTERNET" />
     
@@ -26,6 +26,14 @@
        <activity android:name="com.example.shoppy.Products"></activity>
        <activity android:name="com.example.shoppy.Productdetails"></activity>
         <activity android:name="com.example.shoppy.CartList"></activity>
+         !-- Inbox Activity -->
+        <activity android:name=".BuyDetails" />
+ 
+        <!-- Outbox Activity -->
+        <activity android:name=".TabActivity1" />
+ 
+        <!-- Profile Activity -->
+        <activity android:name=".TabActivity2" />
     </application>
 
 </manifest>

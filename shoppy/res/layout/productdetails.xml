@@ -7,7 +7,7 @@
             android:layout_height="60dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:background="@drawable/bgcolor" >
+            android:background="@drawable/bgcolorb" >
 
             <ImageView
                 android:id="@+id/imageView1"
@@ -18,23 +18,22 @@
                 android:layout_marginRight="24dp"
                 android:src="@drawable/cart" />
 
-            <TextView
-                android:id="@+id/textView1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:text="@string/head" />
-
             <Button
                 android:id="@+id/button1"
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/textView1"
-                android:layout_alignBottom="@+id/textView1"
                 android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
                 android:text="Back" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logo1" />
 
         </RelativeLayout>
 
@@ -45,7 +44,7 @@
         android:layout_below="@+id/relativeLayout1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="24dp"
-        android:text="@string/detail"
+       
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <ImageView
@@ -65,8 +64,8 @@
         android:layout_below="@+id/imageView2"
         android:layout_marginLeft="33dp"
         android:layout_marginTop="48dp"
-        android:text="@string/pname"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:text=""
+         />
 
     <TextView
         android:id="@+id/textView4"
@@ -76,8 +75,8 @@
         android:layout_alignBottom="@+id/textView3"
         android:layout_alignParentRight="true"
         android:layout_marginRight="31dp"
-        android:text="@string/name"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:text=""
+         />
 
     <TextView
         android:id="@+id/textView5"
@@ -87,25 +86,25 @@
         android:layout_alignBottom="@+id/textView3"
         android:layout_centerHorizontal="true"
         android:text="@string/dot"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
+       />
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView3"
-        android:layout_below="@+id/textView3"
-        android:layout_marginTop="35dp"
-        android:text="@string/desc"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+        <requestFocus />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView4"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="19dp"
-        android:text="@string/atc" />
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="35dp"
+            android:text="" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Buy Item" />
 
 </RelativeLayout>

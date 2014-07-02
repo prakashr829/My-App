@@ -11,5 +11,36 @@
       <string name="dot">:</string>
       <string name="name">Product1</string>
       <string name="desc">Product Detail</string>
+      <string name="cid">User_id</string>
+    <string name="cfname">First_name</string>
+    <string name="clname">Last_name</string>
+    <string name="cemail">Email_id</string>
+    <string name="cphone">Phone_No</string>
+    <string name="cadd">Address</string>
+    <string name="Login">Create</string>
+      
+      <string-array name="nav_drawer_items">
+        <item >Home</item>
+        <item >Aboutus</item>
+        <item >Products</item>
+        <item >CartDetails</item>
+        <item >Blog</item>
+        <item >NewArrivals</item>
+    </string-array>
+    
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_people</item>
+        <item>@drawable/ic_photos</item>
+        <item>@drawable/ic_communities</item>
+        <item>@drawable/ic_pages</item>
+        <item>@drawable/ic_whats_hot</item>
+    </array>
+    
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+      
 
 </resources>
