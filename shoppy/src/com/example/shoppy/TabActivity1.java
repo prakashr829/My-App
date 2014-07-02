@@ -15,7 +15,9 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
 
+
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -31,6 +33,7 @@ public class TabActivity1 extends Fragment{
 	TextView user,pass;
 	Button btn;
 	String username,password;
+	private ProgressDialog dialog;
 	@Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
@@ -45,8 +48,12 @@ public class TabActivity1 extends Fragment{
 			public void onClick(View v) {
 				username=user.getText().toString();
 				password=pass.getText().toString();
-				new connect().execute();
+				dialog = ProgressDialog.show(getActivity(), "loading", "loading");
+				new connect().execute("http://67.23.226.129/~saarwayc/shop/mobile/login.php");
+				//Toast.makeText(getActivity(), "success", Toast.LENGTH_SHORT).show();
+				
 				// TODO Auto-generated method stub
+				
 				
 			}
 		});
@@ -99,11 +106,14 @@ public class TabActivity1 extends Fragment{
 
 		@Override
 		protected void onPostExecute(String result){
-			if(result.equals("")){
+			dialog.dismiss();
+			if(result.equals("[]")){
+				
+				Toast.makeText(getActivity(), "success", Toast.LENGTH_SHORT).show();
 				
 			}else{
 				
-			
+				//progDailog.dismiss();
 			Toast.makeText(getActivity(), "success", Toast.LENGTH_SHORT).show();
 			}	
 		}
@@ -124,6 +134,8 @@ public class TabActivity1 extends Fragment{
 
 
 }
+	
+
 
 
 }
